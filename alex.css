@@ -27,7 +27,38 @@ header h3{
    align-items: center;
    position: relative;
 }
- 
+ .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: white;
+    cursor: pointer;
+ }
+ .pp{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50% , -50%);
+     color: black;
+     font-family: Verdana;
+     text-align: center;
+    
+ }
+ .home :hover .overlay{
+     opacity: 0.8;
+ }
+ .pp p{
+     font-size: 2em;
+     font-weight: bold;
+ }
+ .pp h2{
+     font-size: 3em;
+     margin-top: 0.25em;
+ }
 .tittle{
     color: #BB4A4A;
     display: flex;
@@ -214,4 +245,28 @@ margin-right: 30p;
  margin-left: 100px;
 }
 
+
+footer{
+    background-color:black;
+    color:white;
+    padding:2em;
+    display:flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.footer a i{
+    color:white;
+    font-size:1.7em;
+    padding-right: 30px;
+}
+.footer p{
+    font-size:1.3em;
+    font-weight:600;
+}
+.footer p span{
+    color:#3a6cf4;
+}
+.footer p span:hover{
+  color: #cfcc04d3;
+}
 
